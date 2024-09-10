@@ -1,0 +1,53 @@
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Make sure the main container fills the viewport height */
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Add some global padding for the content below the navbar */
+main {
+  padding: 2rem;
+  min-height: calc(100vh - 60px); /* 60px is the height of the navbar */
+}
+
+/* Simple link styling */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* If you need additional styles for the app layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive layout for content */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
